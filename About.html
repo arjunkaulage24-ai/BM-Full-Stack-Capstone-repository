@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Best Cars Dealership</title>
+  <!-- Linked Static Stylesheets -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+  <div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Us Main Card -->
+    <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding-bottom: 2%;">
+      <div class="banner" name="about-header" style="padding: 20px; text-align: center;">
+        <h1>About Us</h1>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 10px auto;">
+          Welcome to <strong>Best Cars Dealership</strong>, home to the best cars in North America. We deal in the sale of domestic and imported cars at reasonable prices, backed by transparent financing and award-winning customer service across all our nationwide branches.
+        </p>
+      </div>
+
+      <!-- Leadership Team Cards -->
+      <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; margin: auto; width: 95%; gap: 20px;">
+        
+        <!-- Team Member 1 -->
+        <div class="card" style="width: 30%; min-width: 260px;">
+          <img class="card-img-top" src="/static/person.png" alt="Sarah Jenkins" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <p class="title" style="font-weight: bold; font-size: 1.25rem; margin-bottom: 2px;">Sarah Jenkins</p>
+            <p style="color: darkcyan; font-weight: 600;">Chief Executive Officer</p>
+            <p class="card-text">
+              With over 18 years in automotive retail, Sarah leads Best Cars Dealership's national expansion and commitment to honest, hassle-free car buying.
+            </p>
+            <p style="font-weight: 500; color: #333;">sarah.jenkins@bestcars.com</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="card" style="width: 30%; min-width: 260px;">
+          <img class="card-img-top" src="/static/person.png" alt="Marcus Vance" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <p class="title" style="font-weight: bold; font-size: 1.25rem; margin-bottom: 2px;">Marcus Vance</p>
+            <p style="color: darkcyan; font-weight: 600;">Director of Sales &amp; Operations</p>
+            <p class="card-text">
+              Marcus oversees inventory sourcing and dealership operations across 25 states, ensuring every domestic and imported vehicle meets strict quality standards.
+            </p>
+            <p style="font-weight: 500; color: #333;">marcus.vance@bestcars.com</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="card" style="width: 30%; min-width: 260px;">
+          <img class="card-img-top" src="/static/person.png" alt="Elena Rostova" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <p class="title" style="font-weight: bold; font-size: 1.25rem; margin-bottom: 2px;">Elena Rostova</p>
+            <p style="color: darkcyan; font-weight: 600;">Head of Customer Experience</p>
+            <p class="card-text">
+              Elena champions customer satisfaction, financing transparency, and post-sale support so every driver leaves the lot with complete confidence.
+            </p>
+            <p style="font-weight: 500; color: #333;">elena.rostova@bestcars.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
