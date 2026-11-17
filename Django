@@ -1,0 +1,15 @@
+cd /home/project/xrwvm-fullstack_developer_capstone/server
+
+# 1. Get your IBM Cloud Container Registry namespace
+MY_NAMESPACE=$(ibmcloud cr namespaces | grep sn-labs-)
+echo $MY_NAMESPACE
+
+# 2. Build and push the Django Docker image
+docker build -t us.icr.io/$MY_NAMESPACE/dealership .
+docker push us.icr.io/$MY_NAMESPACE/dealership
+
+# 3. Deploy the application on Code Engine
+ibmcloud ce application create --name dealership \
+  --image us.icr.io/$MY_NAMESPACE/dealership \
+  --registry-secret icr-secret \
+  --port 8000
